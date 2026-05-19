@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nihongo Talk with Ichiro | Online Japanese Lessons</title>
+    <title>Nihongo Talk with Ichiro | Online Japanese Lessons - Former italki Teacher</title>
+    <meta name="description" content="Learn Japanese online with Ichiro, a 5.0-rated former italki teacher. 6,800+ lessons taught to 843+ students worldwide. Book your trial lesson today!">
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body {
@@ -12,6 +13,8 @@
             color: #333;
             line-height: 1.6;
         }
+
+        /* ========== HEADER ========== */
         header {
             display: flex;
             justify-content: space-between;
@@ -43,10 +46,9 @@
             font-weight: 600;
             transition: all 0.3s;
         }
-        .btn-nav:hover {
-            background: #2d5aa0;
-            transform: translateY(-2px);
-        }
+        .btn-nav:hover { background: #2d5aa0; transform: translateY(-2px); }
+
+        /* ========== HERO ========== */
         .hero {
             display: flex;
             flex-wrap: wrap;
@@ -65,7 +67,7 @@
             margin-bottom: 20px;
         }
         .hero-subtitle { font-size: 18px; color: #555; margin-bottom: 10px; }
-        .hero-japanese { font-size: 15px; color: #999; margin-bottom: 36px; }
+        .hero-japanese { font-size: 15px; color: #999; margin-bottom: 36px; letter-spacing: 0.05em; }
         .hero-buttons { display: flex; gap: 16px; flex-wrap: wrap; }
         .btn-primary {
             padding: 14px 28px;
@@ -94,10 +96,7 @@
             font-size: 16px;
             transition: all 0.3s;
         }
-        .btn-secondary:hover {
-            background: #1f3b73;
-            color: white;
-        }
+        .btn-secondary:hover { background: #1f3b73; color: white; }
         .hero-right {
             flex: 1 1 350px;
             min-width: 300px;
@@ -107,109 +106,217 @@
             box-shadow: 0 10px 40px rgba(0,0,0,0.1);
             height: 600px;
         }
+
+        /* ========== STATS BAR ========== */
+        .stats-bar {
+            background: linear-gradient(135deg, #1f3b73 0%, #2d5aa0 100%);
+            padding: 32px 40px;
+            display: flex;
+            justify-content: center;
+            gap: 80px;
+            flex-wrap: wrap;
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .stat-item { 
+            text-align: center; 
+            color: white;
+            transition: transform 0.3s;
+        }
+        .stat-item:hover { transform: translateY(-4px); }
+        .stat-number {
+            font-size: 42px;
+            font-weight: 900;
+            display: block;
+            line-height: 1;
+            margin-bottom: 8px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+        .stat-label {
+            font-size: 13px;
+            opacity: 0.9;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        /* ========== SOCIAL PROOF ========== */
         .social-proof {
             background: white;
-            padding: 60px 40px;
+            padding: 80px 40px;
             text-align: center;
         }
-        .social-proof h2 { font-size: 28px; color: #1f3b73; margin-bottom: 12px; }
         .italki-badge {
-            display: inline-block;
-            background: #f0f4ff;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: linear-gradient(135deg, #f0f4ff 0%, #e8f2ff 100%);
             color: #1f3b73;
-            padding: 6px 18px;
-            border-radius: 20px;
+            padding: 10px 24px;
+            border-radius: 25px;
             font-size: 14px;
-            font-weight: 600;
-            margin-bottom: 16px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            border: 2px solid rgba(31,59,115,0.1);
         }
-        .rating { font-size: 18px; margin-bottom: 40px; color: #555; }
+        .social-proof h2 {
+            font-size: 36px;
+            color: #1f3b73;
+            margin-bottom: 12px;
+            font-weight: 800;
+        }
+        .section-sub {
+            color: #777;
+            font-size: 16px;
+            margin-bottom: 56px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
         .reviews {
-            display: flex;
-            gap: 24px;
-            justify-content: center;
-            flex-wrap: wrap;
-            max-width: 1000px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 32px;
+            max-width: 1200px;
             margin: 0 auto;
         }
         .review-card {
-            background: #f8f9fa;
-            border-left: 4px solid #e8b4b8;
-            padding: 24px;
-            border-radius: 12px;
-            flex: 1 1 260px;
-            max-width: 300px;
+            background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);
+            border-left: 5px solid #e8b4b8;
+            padding: 32px;
+            border-radius: 20px;
             text-align: left;
-        }
-        .review-card p { font-style: italic; color: #555; margin-bottom: 12px; }
-        .review-card strong { color: #1f3b73; font-size: 14px; }
-        .video-section {
-            background: #f9f5ef;
-            padding: 70px 40px;
-            text-align: center;
-        }
-        .video-section h2 { font-size: 28px; color: #1f3b73; margin-bottom: 12px; }
-        .video-section p { color: #666; margin-bottom: 36px; }
-        .video-wrapper {
+            box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+            transition: all 0.4s ease;
             position: relative;
-            padding-bottom: 56.25%;
-            height: 0;
             overflow: hidden;
-            border-radius: 16px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
-            max-width: 900px;
-            margin: 0 auto;
         }
-        .video-wrapper iframe {
+        .review-card::before {
+            content: '';
             position: absolute;
-            top: 0; left: 0;
-            width: 100%; height: 100%;
-            border: none;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #e8b4b8 0%, #f4c2c2 50%, #e8b4b8 100%);
         }
+        .review-card:hover { 
+            transform: translateY(-8px);
+            box-shadow: 0 16px 48px rgba(0,0,0,0.12);
+        }
+        .review-stars {
+            color: #f4c542;
+            font-size: 18px;
+            margin-bottom: 16px;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+        }
+        .review-text {
+            font-style: italic;
+            color: #444;
+            margin-bottom: 20px;
+            font-size: 15px;
+            line-height: 1.8;
+            position: relative;
+        }
+        .review-text::before {
+            content: '"';
+            font-size: 60px;
+            color: rgba(31,59,115,0.1);
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            font-family: serif;
+        }
+        .review-footer {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding-top: 16px;
+            border-top: 1px solid rgba(0,0,0,0.05);
+        }
+        .review-flag { font-size: 24px; }
+        .review-info { display: flex; flex-direction: column; }
+        .review-name { 
+            font-weight: 700; 
+            color: #1f3b73; 
+            font-size: 14px;
+            margin-bottom: 2px;
+        }
+        .review-source { 
+            font-size: 12px; 
+            color: #999;
+            font-weight: 500;
+        }
+
+        /* ========== BOOKING SECTION ========== */
         .booking-section {
-            background: white;
-            padding: 70px 40px;
+            background: linear-gradient(135deg, #f9f5ef 0%, #f5f1ea 100%);
+            padding: 80px 40px;
             text-align: center;
         }
-        .booking-section h2 { font-size: 32px; color: #1f3b73; margin-bottom: 12px; }
-        .booking-section p { color: #666; margin-bottom: 40px; }
+        .booking-section h2 { 
+            font-size: 36px; 
+            color: #1f3b73; 
+            margin-bottom: 16px;
+            font-weight: 800;
+        }
+        .booking-section p { 
+            color: #666; 
+            margin-bottom: 48px; 
+            font-size: 18px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
         .cal-container {
             max-width: 900px;
             margin: 0 auto;
-            border-radius: 16px;
+            border-radius: 20px;
             overflow: hidden;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            box-shadow: 0 16px 64px rgba(0,0,0,0.1);
             background: white;
+            border: 1px solid rgba(31,59,115,0.1);
         }
+
+        /* ========== FOOTER ========== */
         footer {
             background: #1f3b73;
             color: rgba(255,255,255,0.8);
             text-align: center;
-            padding: 30px 20px;
+            padding: 40px 20px;
             font-size: 14px;
         }
+
+        /* ========== RESPONSIVE ========== */
         @media (max-width: 768px) {
             header { flex-direction: column; gap: 12px; padding: 16px 20px; }
             nav { flex-wrap: wrap; justify-content: center; }
             .hero { padding: 40px 20px; flex-direction: column; }
             .hero-title { font-size: 32px; }
             .hero-right { width: 100%; height: 500px; }
-            .social-proof, .booking-section, .video-section { padding: 50px 20px; }
+            .stats-bar { 
+                gap: 32px; 
+                padding: 24px 20px;
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .stat-number { font-size: 32px; }
+            .social-proof, .booking-section { padding: 50px 20px; }
+            .reviews { grid-template-columns: 1fr; }
         }
     </style>
 </head>
 <body>
 
+    <!-- HEADER -->
     <header>
         <div class="logo">🌸 Nihongo Talk with Ichiro</div>
         <nav>
-            <a href="#about">About</a>
             <a href="#reviews">Reviews</a>
-            <a href="#video">Lessons</a>
+            <a href="#booking">Lessons</a>
             <a href="#booking" class="btn-nav">📅 Book a Lesson</a>
         </nav>
     </header>
 
+    <!-- HERO -->
     <section class="hero">
         <div class="hero-text">
             <h1 class="hero-title">Speak Natural Japanese with Confidence & Joy!</h1>
@@ -220,7 +327,7 @@
             <p class="hero-japanese">オンライン日本語会話レッスン 🎌</p>
             <div class="hero-buttons">
                 <a href="#booking" class="btn-primary">📅 Book a Trial Lesson</a>
-                <a href="#video" class="btn-secondary">▶ Watch Sample Lesson</a>
+                <a href="#reviews" class="btn-secondary">⭐ Read Reviews</a>
             </div>
         </div>
         <div class="hero-right">
@@ -234,41 +341,86 @@
         </div>
     </section>
 
+    <!-- STATS BAR -->
+    <div class="stats-bar">
+        <div class="stat-item">
+            <span class="stat-number">⭐ 5.0</span>
+            <span class="stat-label">Perfect Rating</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-number">843</span>
+            <span class="stat-label">Students Taught</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-number">6,809</span>
+            <span class="stat-label">Lessons Completed</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-number">🌍 30+</span>
+            <span class="stat-label">Countries</span>
+        </div>
+    </div>
+
+    <!-- REVIEWS -->
     <section class="social-proof" id="reviews">
-        <span class="italki-badge">✅ Former italki Teacher</span>
-        <h2>Trusted by Students Worldwide</h2>
-        <div class="rating">⭐⭐⭐⭐⭐ 5.0 / 5.0 &nbsp;|&nbsp; 1,000+ Lessons Completed</div>
+        <span class="italki-badge">✅ Verified italki Professional Teacher</span>
+        <h2>What My Students Say</h2>
+        <p class="section-sub">Real reviews from real students on italki — all rated ⭐⭐⭐⭐⭐ 5 stars</p>
+
         <div class="reviews">
+
+            <!-- アメリカの生徒 -->
             <div class="review-card">
-                <p>"Great conversation practice. Very patient and kind."</p>
-                <strong>— Student from the US 🇺🇸</strong>
+                <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                <p class="review-text">
+                    I always genuinely look forward to talking with Ichiro! I am always amazed by how he can tailor his vocabulary and speed of speech to match my level of understanding. He always has something interesting to talk about, but also is a patient listener and is kind enough to talk about topics that I have interest in when I bring them up. Despite always naturally being nervous I will say or do something rude, Ichiro's patience and kindness always helps make me feel comfortable to be myself and be willing to make the mistakes I need to in order to improve. Plus, he is a great conversationalist and interesting person, so I genuinely enjoy our conversations as conversations and not just as lessons. 30 minutes of talking once seemed like an eternity, but now it feels too short. You won't find a better teacher!
+                </p>
+                <div class="review-footer">
+                    <span class="review-flag">🇺🇸</span>
+                    <div class="review-info">
+                        <span class="review-name">Student from the United States</span>
+                        <span class="review-source">via italki</span>
+                    </div>
+                </div>
             </div>
+
+            <!-- ドイツの生徒 -->
             <div class="review-card">
-                <p>"Helped me feel more confident speaking Japanese."</p>
-                <strong>— Student from Germany 🇩🇪</strong>
+                <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                <p class="review-text">
+                    Ichirou-san is definitely one of the best Japanese teachers on iTalki. I tried several teachers before him, but with none of them did it feel so easy to speak and understand Japanese. When I started, I had already learned a lot of vocabulary through self-study, but I had never had the chance to practice speaking and actually use the vocabulary I had learned (recall is hard without practice). We first started with simple topics and have since moved on to more complex conversations.
+                </p>
+                <div class="review-footer">
+                    <span class="review-flag">🇩🇪</span>
+                    <div class="review-info">
+                        <span class="review-name">Student from Germany</span>
+                        <span class="review-source">via italki</span>
+                    </div>
+                </div>
             </div>
+
+            <!-- エジプトの生徒 -->
             <div class="review-card">
-                <p>"Natural teaching style made learning enjoyable."</p>
-                <strong>— Student from Brazil 🇧🇷</strong>
+                <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                <p class="review-text">
+                    Ichiro Sensei is a very good teacher. On the beginning of my lessons I used to speak only 30 minutes since I didn't believe I could withstand one hour of speaking Japanese. After several times, I was so encouraged to speak for an hour. Now the hour passes very fast. 本当にありがとうございます。
+                </p>
+                <div class="review-footer">
+                    <span class="review-flag">🇪🇬</span>
+                    <div class="review-info">
+                        <span class="review-name">Student from Egypt</span>
+                        <span class="review-source">via italki</span>
+                    </div>
+                </div>
             </div>
+
         </div>
     </section>
 
-    <section class="video-section" id="video">
-        <h2>🎬 See What a Real Lesson Looks Like</h2>
-        <p>Watch an actual lesson and get a feel for the relaxed, natural conversation style.</p>
-        <div class="video-wrapper">
-            <iframe
-                src="https://www.youtube.com/embed/YOUR-VIDEO-ID"
-                title="Sample Japanese Lesson"
-                allowfullscreen>
-            </iframe>
-        </div>
-    </section>
-
+    <!-- BOOKING -->
     <section class="booking-section" id="booking">
-        <h2>📅 Ready to Start? Book Your Lesson!</h2>
-        <p>Choose from Trial Lesson, Conversation Practice, or JLPT Preparation.</p>
+        <h2>📅 Ready to Start Your Journey?</h2>
+        <p>Choose from Trial Lesson, Conversation Practice, or specialized lessons below.</p>
         <div class="cal-container">
             <iframe
                 src="https://cal.com/ichiro?embed=true"
@@ -280,8 +432,9 @@
         </div>
     </section>
 
+    <!-- FOOTER -->
     <footer>
-        <p>© 2024 Nihongo Talk with Ichiro | Online Japanese Lessons</p>
+        <p>© 2024 Nihongo Talk with Ichiro | Professional Online Japanese Lessons</p>
     </footer>
 
 </body>
