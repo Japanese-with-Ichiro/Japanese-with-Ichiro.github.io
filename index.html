@@ -1,10 +1,80 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nihongo Talk with Ichiro | Online Japanese Lessons - Former italki Teacher</title>
-    <meta name="description" content="Learn Japanese online with Ichiro, a 5.0-rated former italki teacher. 6,800+ lessons taught to 843+ students worldwide. Book your trial lesson today!">
+
+    <!-- ========== 基本SEO設定 ========== -->
+    <title>Online Japanese Lessons with Ichiro | 5.0★ Rated • 6,800+ Lessons • Former italki Tutor</title>
+    <meta name="description" content="Learn natural Japanese online with Ichiro, a 5.0-rated former italki tutor with 6,809 lessons and 843 students worldwide. Relaxed, one-on-one conversation practice. Book now!">
+    <meta name="keywords" content="online Japanese lessons, Japanese tutor online, learn Japanese online, Japanese conversation practice, italki Japanese tutor, one on one Japanese lessons, Japanese speaking practice, natural Japanese conversation">
+    <meta name="author" content="Ichiro">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://japanese-with-ichiro.github.io/">
+
+    <!-- ========== OGP（SNSシェア最適化） ========== -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Online Japanese Lessons with Ichiro | 5.0★ Rated Former italki Tutor">
+    <meta property="og:description" content="Learn natural Japanese online with a 5.0-rated tutor. 6,809 lessons taught to 843 students worldwide. Relaxed conversation practice — book your slot today!">
+    <meta property="og:url" content="https://japanese-with-ichiro.github.io/">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Nihongo Talk with Ichiro">
+
+    <!-- ========== Twitter Card ========== -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Online Japanese Lessons with Ichiro | 5.0★ Rated Former italki Tutor">
+    <meta name="twitter:description" content="Learn natural Japanese with a 5.0-rated former italki tutor. 6,809 lessons completed. Book a trial lesson today!">
+
+    <!-- ========== ファビコン ========== -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌸</text></svg>">
+
+    <!-- ========== 構造化データ ========== -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "EducationalOrganization",
+        "name": "Nihongo Talk with Ichiro",
+        "description": "Relaxed online Japanese conversation lessons with a 5.0-rated former italki tutor. 6,809 lessons completed, 843 students worldwide.",
+        "url": "https://japanese-with-ichiro.github.io/",
+        "founder": {
+            "@type": "Person",
+            "name": "Ichiro",
+            "jobTitle": "Japanese Language Tutor",
+            "knowsAbout": ["Japanese language", "Japanese conversation", "Japanese culture", "Natural Japanese speaking"],
+            "knowsLanguage": ["Japanese", "English"]
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Japanese Conversation Lessons",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Course",
+                        "name": "Trial Japanese Lesson",
+                        "description": "First trial lesson for new students to experience natural Japanese conversation practice"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Course",
+                        "name": "Japanese Conversation Practice",
+                        "description": "One-on-one online Japanese conversation practice for all levels"
+                    }
+                }
+            ]
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5.0",
+            "bestRating": "5",
+            "worstRating": "1",
+            "reviewCount": "843"
+        }
+    }
+    </script>
+
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body {
@@ -115,10 +185,9 @@
             justify-content: center;
             gap: 80px;
             flex-wrap: wrap;
-            box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
         }
-        .stat-item { 
-            text-align: center; 
+        .stat-item {
+            text-align: center;
             color: white;
             transition: transform 0.3s;
         }
@@ -129,7 +198,6 @@
             display: block;
             line-height: 1;
             margin-bottom: 8px;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.2);
         }
         .stat-label {
             font-size: 13px;
@@ -139,7 +207,7 @@
             font-weight: 600;
         }
 
-        /* ========== SOCIAL PROOF ========== */
+        /* ========== REVIEWS ========== */
         .social-proof {
             background: white;
             padding: 80px 40px;
@@ -187,44 +255,18 @@
             text-align: left;
             box-shadow: 0 8px 32px rgba(0,0,0,0.08);
             transition: all 0.4s ease;
-            position: relative;
-            overflow: hidden;
         }
-        .review-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 4px;
-            background: linear-gradient(90deg, #e8b4b8 0%, #f4c2c2 50%, #e8b4b8 100%);
-        }
-        .review-card:hover { 
+        .review-card:hover {
             transform: translateY(-8px);
             box-shadow: 0 16px 48px rgba(0,0,0,0.12);
         }
-        .review-stars {
-            color: #f4c542;
-            font-size: 18px;
-            margin-bottom: 16px;
-            text-shadow: 0 1px 2px rgba(0,0,0,0.1);
-        }
+        .review-stars { color: #f4c542; font-size: 18px; margin-bottom: 16px; }
         .review-text {
             font-style: italic;
             color: #444;
             margin-bottom: 20px;
             font-size: 15px;
             line-height: 1.8;
-            position: relative;
-        }
-        .review-text::before {
-            content: '"';
-            font-size: 60px;
-            color: rgba(31,59,115,0.1);
-            position: absolute;
-            top: -10px;
-            left: -10px;
-            font-family: serif;
         }
         .review-footer {
             display: flex;
@@ -235,33 +277,24 @@
         }
         .review-flag { font-size: 24px; }
         .review-info { display: flex; flex-direction: column; }
-        .review-name { 
-            font-weight: 700; 
-            color: #1f3b73; 
-            font-size: 14px;
-            margin-bottom: 2px;
-        }
-        .review-source { 
-            font-size: 12px; 
-            color: #999;
-            font-weight: 500;
-        }
+        .review-name { font-weight: 700; color: #1f3b73; font-size: 14px; margin-bottom: 2px; }
+        .review-source { font-size: 12px; color: #999; font-weight: 500; }
 
-        /* ========== BOOKING SECTION ========== */
+        /* ========== BOOKING ========== */
         .booking-section {
             background: linear-gradient(135deg, #f9f5ef 0%, #f5f1ea 100%);
             padding: 80px 40px;
             text-align: center;
         }
-        .booking-section h2 { 
-            font-size: 36px; 
-            color: #1f3b73; 
+        .booking-section h2 {
+            font-size: 36px;
+            color: #1f3b73;
             margin-bottom: 16px;
             font-weight: 800;
         }
-        .booking-section p { 
-            color: #666; 
-            margin-bottom: 48px; 
+        .booking-section > p {
+            color: #666;
+            margin-bottom: 48px;
             font-size: 18px;
             max-width: 600px;
             margin-left: auto;
@@ -274,7 +307,6 @@
             overflow: hidden;
             box-shadow: 0 16px 64px rgba(0,0,0,0.1);
             background: white;
-            border: 1px solid rgba(31,59,115,0.1);
         }
 
         /* ========== FOOTER ========== */
@@ -284,7 +316,10 @@
             text-align: center;
             padding: 40px 20px;
             font-size: 14px;
+            line-height: 2;
         }
+        footer a { color: rgba(255,255,255,0.6); text-decoration: none; }
+        footer a:hover { color: white; }
 
         /* ========== RESPONSIVE ========== */
         @media (max-width: 768px) {
@@ -293,11 +328,7 @@
             .hero { padding: 40px 20px; flex-direction: column; }
             .hero-title { font-size: 32px; }
             .hero-right { width: 100%; height: 500px; }
-            .stats-bar { 
-                gap: 32px; 
-                padding: 24px 20px;
-                grid-template-columns: repeat(2, 1fr);
-            }
+            .stats-bar { gap: 32px; padding: 24px 20px; }
             .stat-number { font-size: 32px; }
             .social-proof, .booking-section { padding: 50px 20px; }
             .reviews { grid-template-columns: 1fr; }
@@ -319,10 +350,9 @@
     <!-- HERO -->
     <section class="hero">
         <div class="hero-text">
-            <h1 class="hero-title">Speak Natural Japanese with Confidence & Joy!</h1>
+            <h1 class="hero-title">Online Japanese Lessons — Speak Naturally with Confidence!</h1>
             <p class="hero-subtitle">
-                Learn real-life Japanese through relaxed, one-on-one online lessons
-                with a former italki teacher.
+                Relaxed, one-on-one Japanese conversation practice online with a 5.0-rated former italki tutor. All levels welcome.
             </p>
             <p class="hero-japanese">オンライン日本語会話レッスン 🎌</p>
             <div class="hero-buttons">
@@ -336,13 +366,14 @@
                 width="100%"
                 height="100%"
                 frameborder="0"
+                title="Book an online Japanese lesson with Ichiro"
                 style="border:none;">
             </iframe>
         </div>
     </section>
 
     <!-- STATS BAR -->
-    <div class="stats-bar">
+    <div class="stats-bar" aria-label="Teaching statistics">
         <div class="stat-item">
             <span class="stat-number">⭐ 5.0</span>
             <span class="stat-label">Perfect Rating</span>
@@ -363,13 +394,12 @@
 
     <!-- REVIEWS -->
     <section class="social-proof" id="reviews">
-        <span class="italki-badge">✅ Verified italki Professional Teacher</span>
-        <h2>What My Students Say</h2>
-        <p class="section-sub">Real reviews from real students on italki — all rated ⭐⭐⭐⭐⭐ 5 stars</p>
+        <span class="italki-badge">✅ Former italki Tutor</span>
+        <h2>What My Online Japanese Students Say</h2>
+        <p class="section-sub">Real reviews from real students — all rated ⭐⭐⭐⭐⭐ 5 stars on italki</p>
 
         <div class="reviews">
 
-            <!-- アメリカの生徒 -->
             <div class="review-card">
                 <div class="review-stars">⭐⭐⭐⭐⭐</div>
                 <p class="review-text">
@@ -384,7 +414,6 @@
                 </div>
             </div>
 
-            <!-- ドイツの生徒 -->
             <div class="review-card">
                 <div class="review-stars">⭐⭐⭐⭐⭐</div>
                 <p class="review-text">
@@ -399,7 +428,6 @@
                 </div>
             </div>
 
-            <!-- エジプトの生徒 -->
             <div class="review-card">
                 <div class="review-stars">⭐⭐⭐⭐⭐</div>
                 <p class="review-text">
@@ -419,14 +447,18 @@
 
     <!-- BOOKING -->
     <section class="booking-section" id="booking">
-        <h2>📅 Ready to Start Your Journey?</h2>
-        <p>Choose from Trial Lesson, Conversation Practice, or specialized lessons below.</p>
+        <h2>Book Your Online Japanese Lesson Today</h2>
+        <p>
+            Choose from a Trial Lesson or Conversation Practice.
+            Flexible scheduling — sessions available worldwide via Zoom.
+        </p>
         <div class="cal-container">
             <iframe
                 src="https://cal.com/ichiro?embed=true"
                 width="100%"
                 height="700px"
                 frameborder="0"
+                title="Schedule your Japanese lesson"
                 style="border:none;">
             </iframe>
         </div>
@@ -434,7 +466,12 @@
 
     <!-- FOOTER -->
     <footer>
-        <p>© 2024 Nihongo Talk with Ichiro | Professional Online Japanese Lessons</p>
+        <p>© 2025 Nihongo Talk with Ichiro | Online Japanese Conversation Lessons</p>
+        <p style="margin-top:12px; font-size:13px;">
+            Online Japanese Lessons &nbsp;|&nbsp;
+            Japanese Conversation Practice &nbsp;|&nbsp;
+            Former italki Tutor
+        </p>
     </footer>
 
 </body>
